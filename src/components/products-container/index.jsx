@@ -1,14 +1,15 @@
 import React from "react";
 
-const Latest = () => {
+const ProductsContainer = (props) => {
   return (
     <>
+      product list
       <div className="container">
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div className="box">
               <div className="box-head">
-                <h3 className="head-title">Latest Product</h3>
+                <h3 className="head-title">{props.title}</h3>
               </div>
               <div className="box-body">
                 <div className="row">
@@ -149,4 +150,4 @@ const Latest = () => {
   );
 };
 
-export default Latest;
+export default ProductsContainer;
